@@ -6,7 +6,7 @@ import Settings from "./containers/Settings";
 import { Routes, Route, createBrowserRouter } from "react-router-dom";
 
 
-export const router = createBrowserRouter([
+const Router = createBrowserRouter([
     {
       path: "/",
       element: <Login />,
@@ -24,3 +24,5 @@ export const router = createBrowserRouter([
         element: <Settings />,
       },
   ]);
+
+export default Router;

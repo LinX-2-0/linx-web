@@ -4,6 +4,7 @@ export default {
     endpoints: {
         login: 'api/login',
         getUserList: '/api/users',
-        userExists: '/api/userExists'
+        userExists: '/api/userExists',
+        saveuser: '/api/registerUser'
     }
 }
