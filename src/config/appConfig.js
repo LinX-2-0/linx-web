@@ -1,4 +1,4 @@
 export default{
-    BASE_URL: 'http://13.201.36.2:3000',
+    BASE_URL: 'http://65.1.86.38:3000',
     SSO_LOGOUT:'#'
 }
