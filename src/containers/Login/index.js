@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Styles from './login.scss'
 import * as Icons from 'react-feather';
 import { Form } from 'react-bootstrap';
-import { Link, redirect, useNavigate} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { isUserExist, fetchLoginAuthToken } from '../../reducers/apiReducer';
 import { connect, useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../../reducers/userReducer';
@@ -48,13 +48,15 @@ const Login = (props) => {
       password: inputP && inputP.value
     }
     props.fetchLoginAuthToken(loginPayload).then(res => {
-      console.log(res.result)
       const result = res.result;
-      localStorage.setItem("userData",result);
+      localStorage.setItem("userData",JSON.stringify(result?.userData));
+      localStorage.setItem("accessToken",result?.accessToken);
+      localStorage.setItem("refreshToken",result?.refreshToken);
+
     }).catch(err => { console.log(err) })
     .then(()=>{
       console.log("Redirecting to dashboard!")
-      navigate({to:'/dashboard'});
+      navigate('/dashboard');
     });
 
   }

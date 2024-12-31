@@ -1,0 +1,58 @@
+.attendance-tab {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .filter-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  
+  .filter-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .attendance-table th,
+  .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .attendance-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .edit-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #2f0935;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .edit-btn:hover {
+    background-color: #cd6edd;
+  }
+  
+  .no-records {
+    text-align: center;
+    color: #888;
+  }

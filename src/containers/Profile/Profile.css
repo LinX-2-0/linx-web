@@ -1,0 +1,82 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 999px;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.profile-avatar img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.profile-position {
+  font-size: 1rem;
+  color: #666;
+}
+
+.profile-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.profile-details li {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.profile-section {
+  margin: 20px 0;
+}
+
+.profile-section h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-skills,
+.profile-projects,
+.profile-certifications,
+.profile-awards {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-skills li,
+.profile-projects li,
+.profile-certifications li,
+.profile-awards li {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
